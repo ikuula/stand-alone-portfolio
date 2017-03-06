@@ -1,8 +1,20 @@
+@import 'normalize';
+@import 'lightgallery.min';
+@import 'lg-transitions.min';
+
 /********************
 YOUR STYLES
 *******************/
 
+figure {
+    
+    width: 50%;
+}
 
+figure figcaption {
+    font-size: 3em;
+    background: green;
+}
 
 
 /********************
