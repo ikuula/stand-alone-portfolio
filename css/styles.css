@@ -1,20 +1,80 @@
 /********************
 YOUR STYLES
 *******************/
-
+body {
+	font-family: futura;
+	color: black;
+	font-size: 1em;	
+}
+a,
+a:link {
+  text-decoration: none;
+  color: black;
+}
 .caption {
   display: none;
 }
-
 figure {
 background: red;
-width: 200px;
+}
+figcaption {
+  padding: 1em;  
+}
+img {
+	display: flex;
+	justify-content: space-between; 
 }
 
-figcaption {
-  padding: 1em;
-  
+/* ---- Navigation ---- */
+header {
+	background: #f2f2f2;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
 }
+.name,
+.main-nav {
+	margin: 0;
+}
+.name a,
+.main-nav a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: .1em 0;
+}
+.main-nav a {
+  margin-right: 2em;
+}
+.main-nav a:hover {
+	color: red;
+}
+ul {
+	list-style: none;
+}
+/*********FLEXBOX LAYOUT*********/
+.gallery {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: flex;
+
+  /**
+   * Allow the children to wrap to the next "row",
+   * instead of trying to squeeze them all into
+   * a single row.
+   */
+  flex-wrap: wrap;
+
+  width: 80%;
+	margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #D7DBDD;
+}
+
+
+
 
 
 /********************
@@ -34,6 +94,15 @@ MEDIA QUERIES
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
+	.main-nav,
+.main-header {
+  display: flex;
+}
+.main-header {
+  flex-direction: column;
+  align-items: center;
+}	
+	
   /* Diagnostic Styling. Delete When Done. */
   body:before {
        background: yellow;
@@ -44,7 +113,12 @@ MEDIA QUERIES
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
-  
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+	
+	
   /* Diagnostic Styling. Delete When Done. */
   body:before {
        background: yellow;
