@@ -10,25 +10,39 @@
   
   <!-- Normalize CSS makes browsers render all elements more consistently -->
   <link rel="stylesheet" href="scss/_normalize.scss">  
- 
-  <link rel="stylesheet" href="scss/_lightgallery.min.scss">	
-  <link rel="stylesheet" href="scss/_lg-transitions.min.scss">
+	<!-- Light Gallery CSS -->
+  <link rel="stylesheet" href="css/lightgallery.min.css">	
+  <link rel="stylesheet" href="css/lg-transitions.min.css">
    <!-- YOUR STYLES GO HERE -->
-  <link rel="stylesheet" href="scss/_styles.scss">
+  <link rel="stylesheet" href="css/styles.css">
 	
 </head>
 <body>
 	
   <!-- YOUR AWESOME WEBSITE -->
+<div class="caption" id="cap-one">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem maiores libero veritatis officiis nulla culpa alias molestiae dolorum id aspernatur omnis dolorem magni, enim porro error. Facere, nemo, consequuntur.</p>
+</div>
+<div class="caption" id="cap-two">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem maiores libero veritatis officiis nulla culpa alias molestiae dolorum id aspernatur omnis dolorem magni, enim porro error. Facere, nemo, consequuntur.</p>
+</div>
+<div class="caption" id="cap-three">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem maiores libero veritatis officiis nulla culpa alias molestiae dolorum id aspernatur omnis dolorem magni, enim porro error. Facere, nemo, consequuntur.</p>
+</div>
+
 <figure>
-    
-    <a href="img/500.jpg">
-        <img src="http://placehold.it/100x100" alt=""> 
-    </a>
-   
-    
-    <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam recusandae quo dolorum veniam maxime illo nesciunt ab minima exercitationem temporibus error eaque ipsum, blanditiis alias consectetur sunt id unde aliquid!</figcaption>
-    
+  
+  <a href="https://unsplash.it/600" data-sub-html="#cap-one">
+    <img src="http://placehold.it/100x100" alt="" />
+  </a>
+  <a href="https://unsplash.it/500" data-sub-html="#cap-two">
+    <img src="http://placehold.it/100x100" alt="" />
+  </a>
+  <a href="https://unsplash.it/400" data-sub-html="#cap-three">
+    <img src="http://placehold.it/100x100" alt="" />
+  </a>
+  
+  <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sint officia autem tempore aperiam, adipisci nostrum voluptatibus dolor dolore, doloremque iure nesciunt minus, fugit itaque. Ipsum quam veniam ex optio?</figcaption>
     
 </figure>
 
@@ -39,6 +53,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!-- jQuery Plugin -->
   <script src="js/plugin.js"></script>
+  <script src="js/lightgallery.min.js"></script>
   <!-- YOUR SCRIPTS GO HERE -->
   <script src="js/scripts.js"></script>
 

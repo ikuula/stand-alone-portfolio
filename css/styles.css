@@ -1,19 +1,19 @@
-@import 'normalize';
-@import 'lightgallery.min';
-@import 'lg-transitions.min';
-
 /********************
 YOUR STYLES
 *******************/
 
-figure {
-    
-    width: 50%;
+.caption {
+  display: none;
 }
 
-figure figcaption {
-    font-size: 3em;
-    background: green;
+figure {
+background: red;
+width: 200px;
+}
+
+figcaption {
+  padding: 1em;
+  
 }
 
 
