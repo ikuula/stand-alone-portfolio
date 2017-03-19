@@ -6,6 +6,10 @@ body {
 	color: black;
 	font-size: 1em;	
 }
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
 a,
 a:link {
   text-decoration: none;
@@ -15,16 +19,51 @@ a:link {
   display: none;
 }
 figure {
-background: red;
+background: white;
+	display: flex;
+ flex-wrap: wrap;
+margin: 0 auto;
+justify-content: center; 
 }
 figcaption {
   padding: 1em;  
 }
 img {
 	display: flex;
-	justify-content: space-between; 
+	flex-grow: 2;
+	width: 300px;
+	
+	transition: .5s;
+	background-color: black;
 }
-
+img:hover {
+	opacity: .2;
+}
+.hover {
+	position: relative;
+	background: black;
+	margin: .5em;
+}
+.hide {
+	visibility: hidden;
+	overflow: hidden;
+}
+h2 {
+	opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+position: absolute;
+	bottom: -3px;
+	left: 5px;
+  padding: 10px;
+	color: white;
+}
+.hover:hover h2 {
+    letter-spacing: 1px;
+	opacity: 1;
+    transition: 1s ease;
+} 
 /* ---- Navigation ---- */
 header {
 	background: #f2f2f2;
@@ -52,29 +91,6 @@ header {
 ul {
 	list-style: none;
 }
-/*********FLEXBOX LAYOUT*********/
-.gallery {
-  /**
-   * Lay out the children of this container with
-   * flexbox, which is horizontal by default.
-   */
-  display: flex;
-
-  /**
-   * Allow the children to wrap to the next "row",
-   * instead of trying to squeeze them all into
-   * a single row.
-   */
-  flex-wrap: wrap;
-
-  width: 80%;
-	margin: 0 auto;
-  padding: 5px;
-  border: 1px solid #D7DBDD;
-}
-
-
-
 
 
 /********************
