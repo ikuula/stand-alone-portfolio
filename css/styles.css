@@ -101,11 +101,6 @@ MEDIA QUERIES
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
   
 }
 
@@ -120,12 +115,7 @@ MEDIA QUERIES
   flex-direction: column;
   align-items: center;
 }	
-	
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
+
 
 }
 
@@ -135,12 +125,4 @@ MEDIA QUERIES
     flex-direction: row;
     justify-content: space-between; 
   }
-	
-	
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
-
 }
