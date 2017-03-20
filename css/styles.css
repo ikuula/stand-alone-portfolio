@@ -17,6 +17,10 @@ a:link {
 }
 .caption {
   display: none;
+	
+}
+.caption p {
+	width: 50%;
 }
 figure {
 background: white;
@@ -32,13 +36,10 @@ img {
 	display: flex;
 	flex-grow: 2;
 	width: 300px;
-	
 	transition: .5s;
 	background-color: black;
 }
-img:hover {
-	opacity: .2;
-}
+
 .hover {
 	position: relative;
 	background: black;
@@ -50,20 +51,21 @@ img:hover {
 }
 h2 {
 	opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-position: absolute;
-	bottom: -3px;
-	left: 5px;
-  padding: 10px;
-	color: white;
+ position: absolute;
+	bottom: 0px;
+	right: 5px;
+  padding: 0 .5em;
+color: white;
+	font-size: 1em;
 }
 .hover:hover h2 {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 	opacity: 1;
     transition: 1s ease;
-} 
+}
+.hover:hover img {
+	opacity: .1;
+}
 /* ---- Navigation ---- */
 header {
 	background: #f2f2f2;
