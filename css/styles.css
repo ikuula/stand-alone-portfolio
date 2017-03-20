@@ -5,10 +5,19 @@ body {
 	font-family: futura;
 	color: black;
 	font-size: 1em;	
+	
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 .wrapper {
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
+	position:absolute;
+	top:-4em;
+	left:0;
+	width:100%;
+	height:100%;
+	background: url(../img/bg-20.png);
 }
 a,
 a:link {
@@ -27,7 +36,8 @@ background: white;
 	display: flex;
  flex-wrap: wrap;
 margin: 0 auto;
-justify-content: center; 
+justify-content: center;
+	width: 90%;
 }
 figcaption {
   padding: 1em;  
@@ -71,7 +81,7 @@ header {
 	background: #f2f2f2;
 	width: 100%;
 	padding: 0;
-	margin: 0 auto;
+	margin: 4em auto 0;
 }
 .name,
 .main-nav {
