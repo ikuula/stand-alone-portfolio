@@ -25,6 +25,7 @@ a:link {
   color: black;
 }
 
+/*      light box       */
 .lg-sub-html {
 	width: 50%;
 	margin: 3em auto;
@@ -74,6 +75,8 @@ width: 100%;
 figcaption {
   padding: 1em;  
 }
+
+/******imageBoxes******/
 img {
 	width: 100%;
 	transition: .5s;
@@ -106,6 +109,7 @@ color: white;
 .hover:hover img {
 	opacity: .1;
 }
+
 /* ---- Navigation ---- */
 header {
 	background: #f2f2f2;
