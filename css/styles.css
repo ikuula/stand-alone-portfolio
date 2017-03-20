@@ -24,6 +24,37 @@ a:link {
   text-decoration: none;
   color: black;
 }
+
+.lg-sub-html {
+	width: 50%;
+	margin: 3em auto;
+	border-radius: .5em;
+}
+.lg-sub-html:hover {
+	opacity: 1;
+}
+.lg-sub-html h1,
+.lg-sub-html p {
+	text-align: left;
+}
+.lg-sub-html p {
+	padding-bottom: 2.5em;
+}
+.lg-toolbar {
+	background: white;
+	opacity: .5;
+	transition: 2s ease;
+}
+.lg-toolbar:hover {
+	background: red;
+	opacity: 1;
+	transition: .5s ease;
+}
+
+.lg-prev lg-icon {
+	size: 200%;
+}
+
 .caption {
   display: none;
 	
